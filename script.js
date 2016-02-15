@@ -12,8 +12,8 @@ function checker(){
     squareb[i].style.paddingBottom = '11.1%'
     squareb[i].style.float = 'left';
     if (i%2===0){
-      squareb[i].style.backgroundColor = 'black';
-    }else{squareb[i].style.backgroundColor = 'red';
+      squareb[i].style.backgroundColor = 'rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
+    }else{squareb[i].style.backgroundColor = 'rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
   }
 }
 }
