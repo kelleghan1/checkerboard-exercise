@@ -12,7 +12,7 @@ function checker(){
     squareb[i].style.paddingBottom = '11.1%'
     squareb[i].style.float = 'left';
     if (i%2===0){
-      squareb[i].style.backgroundColor = 'rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
+      squareb[i].style.background ="-webkit-linear-gradient(left, red, blue)";
     }else{squareb[i].style.backgroundColor = 'rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
   }
 }
