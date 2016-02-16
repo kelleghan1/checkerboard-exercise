@@ -1,8 +1,16 @@
-// Your JS goes here
+
+var flasher = function(){
+  for (var i = 0; i < 63; i++) {
+    squareb[i].style.backgroundColor ='rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
+  }
+}
+
+var flash = function(){
+  setInterval(flasher, 1000);
+}
 
 function checker(){
-
-  var squareb = [];
+  squareb = [];
 
   for (var i = 0; i < 63; i++) {
 
@@ -11,10 +19,8 @@ function checker(){
     squareb[i].style.width = '11.1%';
     squareb[i].style.paddingBottom = '11.1%'
     squareb[i].style.float = 'left';
-    if (i%2===0){
-      squareb[i].style.background ="-webkit-linear-gradient(left, red, blue)";
-    }else{squareb[i].style.backgroundColor = 'rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
+    squareb[i].style.backgroundColor ='rgb(' + (Math.floor(Math.random()*255)) + ',' + (Math.floor(Math.random()*255)) +',' + (Math.floor(Math.random()*255)) + ')';
   }
-}
+  flash();
 }
 checker();
